@@ -1,0 +1,24 @@
+title:              Navasiolau Blog
+email:              mikita.navasiolau@gmail.com
+description:        Blog about web development
+author:             Navasiolau
+baseurl:            "/"
+url:                "https://navasiolau.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    navasiolau
+facebook_username:  
+linkedin_username:  novosyolov
+
+# Google-analytics ID here to activate google analytics
+google_analytics:   UA-157759637-1
+
+# Build settings
+markdown:           kramdown
+paginate:           10
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap

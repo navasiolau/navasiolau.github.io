@@ -1,0 +1,31 @@
+{
+    "title": "Navasiolau Blog",
+    "name": "navasiolau-blog",
+    "version": "4.0.9",
+    "description": "Simple blog based on jekyll",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://navasiolau.github.io",
+    "license": "MIT",
+    "author": "Navasiolau",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/navasiolau/navasiolau.github.io.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.3.1",
+        "font-awesome": "4.7.0",
+        "jquery": "3.4.1",
+        "startbootstrap-clean-blog": "5.0.8"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "gulp": "4.0.2"
+    }
+}
