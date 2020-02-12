@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Создание сайта на jekyll c публикацией на GitHub Pages"
+subtitle: "Создание и публикация сайта построенного на статическом генераторе jekyll"
+permalink: /jekyll-on-github-pages/
+date: 2020-02-11 22:45:10 -0400
+background: 'https://lh3.googleusercontent.com/8Qn8XL27gPpF_40mQG3Hg_thtCp6h7Dwn8iJQpRdwU5YLD7OezBAJSgnYyKyxpOog9H2UTo2aey-cq7oxFC5J9IzEdFSaNSjwZ_ko7O6GnQkjVP_19tSCO5t4Zjui7NbrZhDykTbraArKZw2qR2StGh6BrVNBfpR4LQmSTVBc_qYXVJLgjno6DQiuaCgy4bZy-24S0aIW83cGY5DfMxILmeYFbHxQw-EkwI6mu5OTKueW2DJdaczkb5q5fboDIuwGZyjacCNu41yVwI_nqLYHvSrNiPEkTBY4fIiMCAjMUr8uJZ5Jchunz6XlWwMKlts9GmxfPJGxNblE5_fhNgCHNgZJHNc-bRgJ8Ke1Gc1znJMvKYj1pYZOoS80vyQxQnCJYmT7baxcEhiWmtBbMmATdPG12ZHKLFbFX363EnIE0K2azYFTg0tz7l0hp0xPa68CK55R3aGpa7P9LpOiw1uA9Nxz8KZ93b037ts-x6CuSHT2zw_BqWBKzHzWWLEMAqm8qbqgb9YFKaFdiLPzgpsgI55HeSNJzYVzbAxKJkhrhOWJaZx-frdt8-DKjy4LkBRWrLjJ8y7UpMoNDnX8fPn8bNURCw4lO84OF849-yO1NiLENQEBEXK1rW-kjLZizL0JmqHjzJOg1iUWGjNtI8YMllVquV1Iik-STZhWQN3quzy5Oh_FGKV33lAFYJ3eno=w1366-h608-ft'
+---
+
+<h2>Jekyll</h2>
+
+<p>
+    Jekyll - генератор статических сайтов. Вы даете ему текст, написанный на вашем любимом языке разметки, и он
+    использует макеты для создания статического сайта. Вы можете настроить внешний вид URL-адресов сайта, данные,
+    отображаемые на сайте, и многое другое.
+</p>
+
+<p>
+    Jekyll имеет очень подробную и простую документацию, с которой можно ознакомится <a href="https://jekyllrb.com/docs/">ТУТ</a>.
+</p>
+
+<p>
+    Jekyll позволяет вам используя понятную структуру создавать различного рода простые сайты. Почему только простые?
+    Причина проста - вы можете упереться в технические ограничения статического генератора и GitHub Pages и это не
+    позволит вам реализовать желаемые функционал. Не стоит забывать, что мы рассматриваем вариант, что у вас нет сервера
+    и ваш сайт хостится на GitHub.
+</p>
+
+<p>
+    При необходимости сайт на Jekyll можно будет достаточно легко перенести на что-то более производительное и с большим
+    функционалом, возможно какую-либо CMS, но тогда ваш сайт потеряет в производительности по сравнению с Jekyll.
+</p>
+
+<h3>Быстрый старт на Jekyll</h3>
+
+<p>
+    Существует вариант из документации - вы получите базовую структуру, которую сможете доработать под свои нужды и
+    вариант с заимствованием уже готовой jekyll темы с последующим развертыванием ее. Мы рассмотрим оба варианта.
+</p>
+
+<h4>Вариант из документации с получением "базового" сайта</h4>
+
+<ol>
+    <li>Установите срезу разработки Ruby -> <a href="https://jekyllrb.com/docs/installation/">ТЫК</a></li>
+    <li>Установите Jekyll и гемы <code>gem install jekyll bundler</code></li>
+    <li>Создайте новый сайт Jekyll <code>jekyll new myblog</code></li>
+    <li>Перейдите в новый каталог <b>myblog</b> <code>cd myblog</code></li>
+    <li>Создайте сайт и запустите локальный сервер <code>bundle exec jekyll serve</code></li>
+    <li>Перейдите по адресу <a href="http://localhost:4000" target="_blank">http://localhost:4000</a></li>
+    <li>
+        Далее его можно залить на GitHub:
+        <ul>
+            <li>Инициализируем репозиторий <code>git init</code></li>
+            <li>Добавляем файлы в индекс <code>git add .</code></li>
+            <li>Коммитим <code>git commit -m "initial commit"</code></li>
+            <li>
+                Указываем origin для вашего репозитория
+                <code>git remote add origin https://github.com/navasiolau/username.github.io.git</code>
+            </li>
+            <li>Пушим наши файлы в мастер<code>git push -u origin master</code></li>
+            <li>Ждем некоторое время, пока github билдит наш сайт, после чего он будет доступен по адресу <b>username.github.io.git</b></li>
+        </ul>
+    </li>
+</ol>
+
+<h4>Вариант с использованием готовой темы</h4>
+
+
+<ol>
+    <li>Переходим на маркет с темами в бесплатный раздел -> <a href="https://jekyllthemes.io/free">ТЫК</a></li>
+    <li>Выбираем тему</li>
+    <li>Переходим в Github репозиторий темы</li>
+    <li>Скачиваем ее</li>
+    <li>Удаляем .git папку в корне, изменяем содержание под свои нужды</li>
+    <li>Заливаем изменения на Github</li>
+</ol>
+
+<h3>Заключение</h3>
+
+<p>
+    После выполнения одного из вариантов ваш сайт должен быть доступен по адресу username.github.io. Это прекрасно, но
+    хотелось бы, чтобы он был доступен по "человеческому" адресу. Об этом и будет следующая статья.
+</p>
+
+
+
